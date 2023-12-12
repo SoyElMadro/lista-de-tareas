@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #cde;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  margin: 100px 300px;
+  border-radius: 1em;
+  box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.4);
+  padding: 52px;
+}
+
+h2 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 36px;
+  font-size: 2em;
+  letter-spacing: 3px;
+  color: #00406d;
+
+}
+
+#alertas {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  width: 80%;
+}
+
+.alerta {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  padding: 6px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  color: #353535;
+  user-select: none;
+}
+
+.tarea-añadida {
+  background-color: #00ff005f;
+}
+
+.tarea-eliminada {
+  background-color: #ff00005f;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.desaparecer-alerta {
+  animation: fadeOut 2300ms ease-in-out;
+}
+
+#agregar {
+  display: flex;
+  width: 80%;
+}
+
+#agregar input {
+  width: 100%;
+  border: 1px solid rgb(120, 220, 230);
+  background-color: rgba(160, 240, 255, 0.1);
+  outline: none;
+  border-radius: 6px 0 0 6px;
+  padding: 0 8px;
+  font-size: 16px;
+}
+
+#agregar input:focus {
+  outline: 1px solid #09f;
+}
+
+#agregar .añadir {
+  font-size: 16px;
+  width: 20%;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  background-color: rgb(120, 220, 230);
+  letter-spacing: 1.5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  border: 1px solid rgb(120, 220, 230);
+}
+
+#agregar .añadir:active {
+  border-color: #00406d;
+}
+
+#agregar .añadir:hover {
+  text-decoration: underline;
+}
+
+#lista {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 100%;
+}
+
+.item {
+  display: flex;
+  width: 100%;
+  margin: 0 50px 16px 50px;
+  font-size: 20px;
+}
+
+.item .botones {
+  margin-left: auto;
+  vertical-align: middle;
+  margin-top: 2px;
+  margin-right: 100px;
+}
+
+.botones i {
+  padding-left: 12px;
+}
+
+.bxs-edit,
+.bxs-edit-alt,
+.bxs-trash-alt {
+  cursor: pointer;
+}
+
+.bxs-trash-alt {
+  color: #f00;
+}
+
+.bxs-edit {
+  color: #0f0;
+}
+
+.bxs-edit-alt {
+  color: #09f;
+}
+
+.btn-limpiar {
+  color: #f00;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  padding: 8px 12px;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+.btn-limpiar:active {
+  text-decoration: underline;
+}
